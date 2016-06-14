@@ -14,7 +14,7 @@
       "model": "Altima",
       "year": "2012",
       "price": "18999",
-      "color": "puke green",
+      "color": "green",
       "purchased": false,
       "description": "The Altima is the perfect sedan for all of your Nissan adventures."
     },
@@ -41,7 +41,7 @@
       "model": "Maxima",
       "year": "2020",
       "price": "65000",
-      "color": "deyhredated yellow",
+      "color": "yellow",
       "purchased": false,
       "description": "Own this car from the future. 0 miles on it"
     }

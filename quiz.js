@@ -5,7 +5,11 @@ function populatePage (inventory) {
 
   for (var i = 0; i < inventory.cars.length; i++) { 
     var currentCar = inventory.cars[i];
-    inventorylist += `<h2>${currentCar.year} ${currentCar.make}</h2>`
+    inventorylist += `<div id="card--${i}" class="carClass" style="border: 1px solid ${currentCar.color}">
+    <h2>${currentCar.make} ${currentCar.model}</h2>
+    <h4>${currentCar.year}  $${currentCar.price}</h4>
+    <h4>${currentCar.color}  ${currentCar.purchased}</h4>
+     <h5>${currentCar.description}</h5></div>`
     DOMoutput.innerHTML = inventorylist;
 }};
 
