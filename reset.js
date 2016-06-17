@@ -7,19 +7,25 @@
 // A color name.
 
 var CarLot = (function (newCarlot) {
-var editedCars = document.getElementsByClassName("newClass");
+// var editedCars = document.getElementsByClassName("newClass");
+var editedCars = document.getElementsByClassName("carClass");
+
 	newCarlot.resetBorder = function() {
+		console.log("editedCars", editedCars)
+		console.log("editedCars.length", editedCars.length)
 		for (var i = 0; i < editedCars.length; i++) {
+			console.log("HELLO?")
 			editedCars[i].classList.remove("newClass");
-			editedCars[i].classList.add("newBackground"); /////why is this not going back to "carClass", x needs to be defined
-	}}
+			// editedCars[i].classList.add("newBackground"); /////why is this not going back to "carClass", x needs to be defined
+		}
+	}
 
 
 	newCarlot.changeBorder = function (element, color) {
         console.log("addSelectedClass has fired."); ////firing on click now/////////
-        element.classList.remove("carClass");
-        element.classList.add("newBackground");
-        element.style.backgroundColor = color;
+        // element.classList.remove("carClass");
+        // element.classList.add("newBackground");
+        // element.style.backgroundColor = color;
     }
 	return newCarlot;
 
