@@ -10,10 +10,8 @@ var editedCars = document.getElementsByClassName("newClass");
 
 ////////Changes border to assigned color in functions argument//////////
 	newCarlot.changeBorder = function (element, color) {
-        console.log("function has fired."); ////firing on click now/////////
-        element.classList.remove("carClass");
-        element.classList.add("newBackground");
-        element.style.backgroundColor = color;
+        element.style.border = "thick solid"; /////////changes border to thick//////
+        element.style.backgroundColor = color;///////////changes to a color that is an argument in the function on events.js/////////
     }
 	return newCarlot;
 
