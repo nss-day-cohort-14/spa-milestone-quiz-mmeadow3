@@ -11,14 +11,14 @@ var editedCars = document.getElementsByClassName("newClass");
 	newCarlot.resetBorder = function() {
 		for (var i = 0; i < editedCars.length; i++) {
 			editedCars[i].classList.remove("newClass");
-			x.classList.add("carClass"); /////why is this not going back to "carClass", x needs to be defined
+			editedCars[i].classList.add("newBackground"); /////why is this not going back to "carClass", x needs to be defined
 	}}
 
 
 	newCarlot.changeBorder = function (element, color) {
         console.log("addSelectedClass has fired."); ////firing on click now/////////
         element.classList.remove("carClass");
-        element.classList.add("newClass");
+        element.classList.add("newBackground");
         element.style.backgroundColor = color;
     }
 	return newCarlot;

@@ -11,7 +11,7 @@ var CarLot = function(newCarlot) {
 			///////////Add styling to card on click and remove styling from other cards; focus text input
 			selectedCar.addEventListener("click", function() {
 				CarLot.resetBorder(); /////This is from the IIFE augmentation on "reset.js"
-				CarLot.changeBorder(event.currentTarget, "red");
+				CarLot.changeBorder(event.currentTarget, "red"); /////
 				///// console.log("current target", event.currentTarget); ////////shows the DIV being clicked on///////
 				//////Save the event.currentTarget so it can be used in other functions
 				carToEdit = event.currentTarget;
