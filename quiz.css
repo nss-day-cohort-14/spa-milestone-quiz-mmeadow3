@@ -9,14 +9,3 @@
 	text-align: center;
 	font-family: Helvetica;
 }
-.newBorder{
-	border:10px solid red;
-}
-
-.oldClass{
-	border: 5px solid red;
-}
-
-.newBackground{
-	background: red;
-}

@@ -15,7 +15,7 @@ var CarLot = function(newCarlot) {
 				///// console.log("current target", event.currentTarget); ////////shows the DIV being clicked on///////
 				//////Save the event.currentTarget so it can be used in other functions
 				carToEdit = event.currentTarget;
-				CarLot.changeBorder(event.currentTarget, "red"); /////
+				CarLot.changeBorder(event.currentTarget, "blue"); /////
 				///////////////////////////////////////////////////////
 				/////This will add styling set in CSS under .newClass/////////////////////
 				carToEdit.classList.add("newClass");	
@@ -30,8 +30,8 @@ var CarLot = function(newCarlot) {
 					var paragraph = document.getElementById("description--" + carToEdit.id.split("--")[1]);
 					var userText = textInput.value;
 	   				paragraph.innerHTML = userText;  ////////This takes selected element and will overwrite text//////////////////
-				})
-			});
+				})/////End Key Up Function/////////
+			});//////End Click Event////////////
 
 		}////////END FOR LOOP////////////////
 	};
