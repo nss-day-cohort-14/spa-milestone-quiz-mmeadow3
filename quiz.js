@@ -9,7 +9,7 @@ function populatePage (inventory) {
 
   for (var i = 0; i < inventory.cars.length; i++) { 
     var currentCar = inventory.cars[i];
-    inventorylist += `<div class="carClass" id="car--${i}" style="border: 1px solid ${currentCar.color}">
+    inventorylist += `<div class="carClass col-md-4" id="car--${i}" style="border: 1px solid ${currentCar.color}">
     <h2>${currentCar.make} ${currentCar.model}</h2>
     <h4>${currentCar.year}  $${currentCar.price}</h4>
     <h4>${currentCar.color}  ${currentCar.purchased}</h4>

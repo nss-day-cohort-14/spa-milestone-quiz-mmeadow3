@@ -3,7 +3,7 @@ var CarLot = function(newCarlot) {
 	///////////declare these vars outside scope of functions//////////////////
 	var selectedCar;
 	var carToEdit;
-	var savedInput = [];
+	
 	newCarlot.activateEvents = function() {
 		var cars = document.getElementsByClassName("carClass");
 
@@ -32,11 +32,8 @@ var CarLot = function(newCarlot) {
 	   				paragraph.innerHTML = userText;  ////////This takes selected element and will overwrite text//////////////////
 				})/////End Key Up Function/////////
 			});//////End Click Event////////////
-
 		}////////END FOR LOOP////////////////
 	};
-
-
-		return newCarlot;
+return newCarlot;
 
 }(CarLot || {});
