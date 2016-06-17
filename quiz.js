@@ -1,4 +1,4 @@
-
+/////Public Variables and functions///////////////
 var textInput = document.getElementById("inputText");
 var submit = document.getElementById("submit");
 
@@ -13,7 +13,7 @@ function populatePage (inventory) {
     <h2>${currentCar.make} ${currentCar.model}</h2>
     <h4>${currentCar.year}  $${currentCar.price}</h4>
     <h4>${currentCar.color}  ${currentCar.purchased}</h4>
-     <h5 id="description">${currentCar.description}</h5></div>`
+    <h5 id="description${i}">${currentCar.description}</h5></div>`
     }
 DOMoutput.innerHTML = inventorylist;
 
