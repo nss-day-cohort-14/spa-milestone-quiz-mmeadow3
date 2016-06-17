@@ -10,6 +10,8 @@ var CarLot = function(newCarlot) {
 			selectedCar = cars[i];
 			///////////Add styling to card on click and remove styling from other cards; focus text input
 			selectedCar.addEventListener("click", function() {
+				CarLot.resetBorder(); /////This is from the IIFE augmentation on "reset.js"
+				CarLot.changeBorder(event.currentTarget, "red");
 				///// console.log("current target", event.currentTarget); ////////shows the DIV being clicked on///////
 				//////Save the event.currentTarget so it can be used in other functions
 				carToEdit = event.currentTarget;
@@ -17,7 +19,7 @@ var CarLot = function(newCarlot) {
 				///////This will remove the styling set by quiz.JS/////////////
 				carToEdit.removeAttribute("style");
 				/////This will add styling set in CSS under .newClass/////////////////////
-				carToEdit.setAttribute("class", "newClass");
+				carToEdit.setAttribute("class", "newClass");	
 				textInput.focus(); //////focuses on Input box defined on quiz.js///////////
 				///////////KEY UP FUNCTION FOR ENTER KEY//////////////////////
 				textInput.addEventListener("keyup", function() {
@@ -30,13 +32,11 @@ var CarLot = function(newCarlot) {
 				var paragraph = document.getElementById("description--" + carToEdit.id.split("--")[1]);
 				var userText = textInput.value;
    				paragraph.innerHTML = userText;  ////////This takes selected element and will overwrite text//////////////////
-			}) 
-			
-			CarLot.resetBorder();
-			
-			});////////END FOR LOOP////////////////
-			}
+			})
+			});
+			}////////END FOR LOOP////////////////
 			};
+
 
 		return newCarlot;
 
