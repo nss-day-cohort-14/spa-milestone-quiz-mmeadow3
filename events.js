@@ -5,21 +5,23 @@ var CarLot = function(newCarlot) {
 	var carToEdit;
 	
 	newCarlot.activateEvents = function() {
-		var cars = document.getElementsByClassName("carClass");
+		var cars = document.getElementsByClassName("cars");
 
 		for (var i = 0; i < cars.length; i++) {
 			selectedCar = cars[i];
 			///////////Add styling to card on click and remove styling from other cards; focus text input
+			selectedCar.addEventListener("click", CarLot.resetBorder);
 			selectedCar.addEventListener("click", function() {
-				CarLot.resetBorder(); /////This is from the IIFE augmentation on "reset.js"
+				// CarLot.resetBorder(); /////This is from the IIFE augmentation on "reset.js"
 				///// console.log("current target", event.currentTarget); ////////shows the DIV being clicked on///////
 				//////Save the event.currentTarget so it can be used in other functions
 				carToEdit = event.currentTarget;
-				CarLot.changeBorder(event.currentTarget, "blue"); /////
+				CarLot.changeBorder(event.currentTarget, "red")
 				///////////////////////////////////////////////////////
 				/////This will add styling set in CSS under .newClass/////////////////////
-				carToEdit.classList.add("newClass");	
+				// carToEdit.classList.add("newClass");	
 				textInput.focus(); //////focuses on Input box defined on quiz.js///////////
+				textInput.value = ""; /////////Make function to clear input when different element is selected
 				///////////KEY UP FUNCTION FOR ENTER KEY//////////////////////
 				textInput.addEventListener("keyup", function() {
 					////ENTER KEY RESET////////////////////////
@@ -37,3 +39,5 @@ var CarLot = function(newCarlot) {
 return newCarlot;
 
 }(CarLot || {});
+
+
