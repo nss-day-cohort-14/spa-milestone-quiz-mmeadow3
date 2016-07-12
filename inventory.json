@@ -1,0 +1,49 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": true,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+     {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": "2012",
+      "price": "18999",
+      "color": "green",
+      "purchased": false,
+      "description": "The Altima is the perfect sedan for all of your Nissan adventures."
+    },
+     {
+      "make": "Nissan",
+      "model": "GT-R",
+      "year": "2015",
+      "price": "89999",
+      "color": "Black",
+      "purchased": false,
+      "description": "Impress your friends and piss off poor people with this speedy roadster."
+    },
+     {
+      "make": "Nissan",
+      "model": "Titan",
+      "year": "2009",
+      "price": "15999",
+      "color": "Brown",
+      "purchased": false,
+      "description": "Owning this truck with provide an illusion that you actually do work that requires a truck and not a mazda miata."
+    },
+     {
+      "make": "Nissan",
+      "model": "Maxima",
+      "year": "2020",
+      "price": "65000",
+      "color": "yellow",
+      "purchased": false,
+      "description": "Own this car from the future. 0 miles on it"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.cars{
+	background: lightblue;
+	min-height: 250px;
+	text-align: center;
+	border: 1px solid;
+}
+
+
+.newClass {
+	border: 10px solid;
+}
+
